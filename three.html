@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body style="background-color: black; color: aqua;">
+  
+</body>
+<script>
+  function createHeader(Text,color){
+    const header =document.createElement('header');
+  header.setAttribute('class','navbar');
+  header.id=Math.round(Math.random()*10
++1);
+  // header.innerHTML='ssk group of company';
+  const addText=document.createTextNode(Text)
+   header.appendChild(addText)
+ header.style.backgroundColor=color;
+ 
+ Object.assign(header.style,{
+  padding:'20px',
+  margin:'10px',
+  
+  
+
+ })
+document.body.appendChild(header)
+  }
+  createHeader('ass is testy','red')
+</script>
+</html>

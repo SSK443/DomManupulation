@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body style="background-color: black; color:beige; text-align: center;">
+  <h1 id="title" class="heading">chai aur code ke saath</h1>
+  <p>Lorem ipsum dolor sit amet.</p>
+  <ul>
+    <li class="li">one</li>
+    <li class="li">two</li>
+    <li class="li">three</li>
+    <li class="li">four</li>
+  </ul>
+</body>
+<script>
+const parent=document.querySelector('ul')
+// console.log(parent);
+// console.log(parent.children);
+// parent.children[1].style.backgroundColor='red';
+// for(i=3;i<parent.children.length;i++){
+//   parent.children[i].style.color='blue'
+// }
+// console.log(parent.firstElementChild.innerHTML);
+// console.log(parent.lastElementChild.innerHTML);
+
+// const child=document.querySelector('.li')
+// console.log(child.parentElement);
+
+// console.log(child.nextElementSibling);
+
+// console.log(parent.childNodes);
+
+const nav=document.createElement('nav')
+console.log(nav);
+nav.setAttribute('class','navOne')
+nav.id='title'
+// nav.innerHTML='sdffef';
+const addText=document.createTextNode('lkgldkglkgf')
+nav.appendChild(addText)
+Object.assign(nav.style,{
+  padding:'20px',
+  backgroundColor:'blue',
+
+})
+document.body.appendChild(nav)
+</script>
+</html>

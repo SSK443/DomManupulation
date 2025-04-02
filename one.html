@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- document.getElementById('firstHeading'); to use dom manupulation id. can only select one id is unique -->
+ <div>  <h1 id="firstHeading">Hello, World!</h1>
+  <button onclick="colorChange()">Change Color</button>
+</div>
+  <div>
+     <h1 class="title">Hello, World!</h1>
+  <h1 class="title">Welcome to JavaScript!</h1>
+  <h1 class="title">Enjoy Coding!</h1>
+  <button onclick="changeUsegetElementsByClassName()">Change Style</button>
+
+  </div>
+</body>
+<script>
+  function colorChange(){
+    const colorChange=document.getElementById('firstHeading');
+Object.assign(colorChange.style,{
+  
+    color: 'red',
+    backgroundColor: 'blue',
+    fontSize: '30px',
+    padding: '15px',
+    borderRadius: '10px'
+})
+
+  }
+
+
+  function changeUsegetElementsByClassName(){
+   const changes=document.getElementsByClassName('title')
+ for(let i=0;i<=changes.length;i++){
+changes[0].style.color='red';
+changes[1].style.color='black';
+changes[2].style.color='yellow';
+changes[i].style.backgroundColor="blue";
+changes[i].innerHTML="wow Iam coming"
+ }
+  }
+
+</script>
+</html>
