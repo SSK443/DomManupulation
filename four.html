@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body style="background-color: black; color: wheat;">
+  <div>
+    <h1>Programming language</h1>
+    <ul>
+      <li>Java</li>
+    </ul>
+  </div>
+  
+</body>
+<script>
+  function addLang(lang){
+    const list=document.createElement('li')
+    list.appendChild(document.createTextNode(lang))
+    document.querySelector('ul').appendChild(list)
+  }
+  addLang('python')
+  addLang('c++')
+  addLang('Go')
+//edit
+  function replaceLang(lang){
+const list=document.createElement('li');
+list.appendChild(document.createTextNode(lang))
+const replacelang=document.querySelector('li:nth-child(2)');
+replacelang.replaceWith(list)
+  }
+  replaceLang('swift')
+  const firstElment=document.querySelector('li:first-child')
+  ///edit
+  console.log(firstElment);
+  firstElment.outerHTML='<h1>c#</h1>'
+  //remove
+  const lastElement=document.querySelector('li:last-child')
+  lastElement.remove()
+</script>
+</html>
